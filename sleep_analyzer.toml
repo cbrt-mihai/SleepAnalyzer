@@ -1,0 +1,16 @@
+# SleepAnalyzer config — run with: sleep-analyzer
+# CLI flags override these values. See README for keys.
+
+log_file = "data/sleep_log.txt"
+year = 2026
+min_samples = 2
+bin_minutes = 30
+wake_weight = 0.25
+fragment_weight = 0.25
+gap_weight = 0.45
+forced_mid_weight = 0.15
+day_filter = "all"
+# bedtime = "4:30"
+plot = false
+output_dir = "output"
+# export_json = "output/report.json"

@@ -1,0 +1,13 @@
+# Core format still works. Optional fields after wakeups:
+#   latency minutes (rough), wake/end reason, stress 1-5, nap:MIN
+# End reasons: alarm | natural | call | other
+# Composite sleep: join segments with + and tag each [latency/end_reason]
+#   Sat 18 Jul 6:00 - 10:00[25/alarm] + 10:20 - 12:00[10/natural] Sat 18 Jul - 5.25, 1, stress:3.5
+#
+Mon 13 Jul 4:05 - 11:15 Mon 13 Jul - 7.25, 0, 5, alarm, 1
+Tue 14 Jul 3:40 - 9:45 Tue 14 Jul - 6, 0, 20, alarm, 1
+Wed 15 Jul 5:25 - 10:58 Wed 15 Jul - 7, 0, 0, alarm, 1
+Thu 16 Jul 5:40 - 10:45 Thu 16 Jul - 6.75, 0, 10, alarm, 1
+Fri 17 Jul 4:40 - 10:25 Fri 17 Jul - 7, 1, 25, alarm, 1
+Sat 18 Jul 6:15 - 10:04[40/alarm] + 10:15 - 12:45[20/alarm] Sat 18 Jul - 5.25, 1, stress:3.5
+Sun 19 Jul 4:48 - 12:00 Sun 19 Jul - 6, 1, 10, alarm, 2.5
